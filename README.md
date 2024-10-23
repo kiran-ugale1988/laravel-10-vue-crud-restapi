@@ -29,3 +29,39 @@ php artisan db:seed
 php artisan tinker
 => check the seeded data => App\Models\Todo::all();
 
+=========================vue js installation setup======
+npm install vue@2 vue-loader vue-template-compiler
+npm install --save-dev @vue/cli-plugin-babel
+
+npm install axios
+
+npm install vue@2 @vitejs/plugin-vue2
+
+vite.config.js => Make like following:
+
+import { defineConfig } from 'vite';
+import vue from '@vitejs/plugin-vue2'; // or '@vitejs/plugin-vue' for Vue 3
+import laravel from 'laravel-vite-plugin';
+
+export default defineConfig({
+    plugins: [
+        laravel({
+            input: ['resources/css/app.css', 'resources/js/app.js'],
+            refresh: true,
+        }),
+        vue(),
+    ],
+});
+
+
+npm run dev
+php artisan serve
+
+====First initializing the git====
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:kiran-ugale1988/laravel-10-vue-crud-restapi.git
+git push -u origin main
+
