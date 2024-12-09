@@ -1,3 +1,4 @@
+```
 composer create-project laravel/laravel:^10.* .
 
 php artisan migrate
@@ -28,8 +29,9 @@ php artisan db:seed
 
 php artisan tinker
 => check the seeded data => App\Models\Todo::all();
-
+```
 =========================vue js installation setup======
+```
 npm install vue@2 vue-loader vue-template-compiler
 npm install --save-dev @vue/cli-plugin-babel
 
@@ -52,16 +54,25 @@ export default defineConfig({
         vue(),
     ],
 });
-
-
+```
+```
 npm run dev
 php artisan serve
 
 ====First initializing the git====
+
 git init
 git add README.md
 git commit -m "first commit"
 git branch -M main
 git remote add origin git@github.com:kiran-ugale1988/laravel-10-vue-crud-restapi.git
 git push -u origin main
+
+```
+
+### REST API Call and JSON output
+<img width="942" alt="image" src="https://github.com/user-attachments/assets/991a92ba-78ef-48e6-8986-368ec02f753c">
+
+### Consumed API in VueJS
+<img width="861" alt="image" src="https://github.com/user-attachments/assets/835dcb45-b2eb-482f-82cc-3a89b3340e74">
 
